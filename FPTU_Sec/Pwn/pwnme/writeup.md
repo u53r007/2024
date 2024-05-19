@@ -54,7 +54,7 @@ Vào pwndbg:
 
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/4314a9ad-45b8-4bf9-97d8-9490d164f666)
 
-xong sau đó chạy file script. sẽ ra được flag.
+xong sau đó chạy file script exploit.py sẽ ra được flag.
 >[!NOTE]
 >Một cách thần kì nào đó mà mình test dòng địa chỉ của instruction __mov rbp,rsp__ trong hacked() thì mới mở flag được còn các dòng khác không mở được :<<.
 ### END!!
