@@ -59,6 +59,6 @@ xong sau đó chạy file script exploit.py sẽ ra được flag.
 >Một cách thần kì nào đó mà mình test dòng địa chỉ của instruction __mov rbp,rsp__ trong hacked() thì mới mở flag được còn các dòng khác không mở được :<<.
 
 >Source tham khảo:
->[Ret2win](https://www.youtube.com/watch?v=eg0gULifHFI)
->[picoCTF John Hammond](https://www.youtube.com/watch?v=E4ZWJsGySoY&t=508s)
+>[PicoCTF JohnHammond](https://www.youtube.com/watch?v=eg0gULifHFI)
+>[Ret2win](https://www.youtube.com/watch?v=E4ZWJsGySoY&t=508s)
 ### END!!
