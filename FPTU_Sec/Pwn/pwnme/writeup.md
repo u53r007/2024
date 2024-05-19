@@ -57,7 +57,7 @@ Vào pwndbg:
 
 xong sau đó chạy file script exploit.py sẽ ra được flag.
 >[!NOTE]
->Một cách thần kì nào đó mà mình test dòng địa chỉ của instruction __mov rbp,rsp__ trong hacked() thì mới mở flag được còn các dòng khác không mở được :<<.
+>Phải chọn đúng địa chỉ của instruction __mov rbp,rsp__ thì mới mở flag được là bởi vì chúng ta đang xài offset của rsp chứ không phải rip.
 
 >Source tham khảo:
 >[PicoCTF JohnHammond](https://www.youtube.com/watch?v=eg0gULifHFI)
