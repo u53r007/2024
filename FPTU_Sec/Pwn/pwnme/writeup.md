@@ -37,7 +37,7 @@ Trước tiên ta tìm offset của hàm hacked(). Có nhiều cách để làm 
 
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/b37e9441-38df-4fdb-9530-b3c88c586a03)
 
-Vậy là ta đã tìm được offset của hacked() là 24. Giờ chúng ta dùng payload để chuyển hướng RIP sang hàm hacked() (payload có thể tự craft hoặc dùng của pwntools).
+Vậy là ta đã tìm được offset của hacked() là 24. Giờ chúng ta dùng payload để chuyển hướng RIP sang hàm hacked() (payload có thể tự craft hoặc dùng của pwntools local_run.py).
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/9e735278-21b3-4c58-add0-3c7f4fabd0f5)
 Tada thành công!! Nếu bạn đọc kĩ source code thì sẽ thấy là hàm hacked() đã được trả về đúng kết quả nhưng flag chưa có vì ta đang chạy trên local nên làm gì có file flag mà đọc :))). Thêm bước thử nữa tạo 1 file flag.txt điền đại vô đó coi nó có chạy không.
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/6d385b28-ae73-48cb-9bce-cf26c084edbc)
