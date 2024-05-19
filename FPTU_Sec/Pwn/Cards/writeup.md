@@ -31,5 +31,6 @@ Xong chúng ta chỉ cần chọn 2 để mua flag thôi.
 >[!NOTE]
 >Tại sao nhập số âm mà lại trả ra số dương??!! Chương trình bị lỗi tràn số học (arithmetic overflow) mà trong đây là integer overflow.
 >![image](https://github.com/uS3rR00t05/2024/assets/165979681/d5b9cd57-a836-4c6c-b82d-43abfa4179e3)
->[Integer overflow](https://www.youtube.com/watch?v=Dbbh_lrbgAU)
+
+>Source tham khảo: [Integer overflow](https://www.youtube.com/watch?v=Dbbh_lrbgAU)
 ### END!!
