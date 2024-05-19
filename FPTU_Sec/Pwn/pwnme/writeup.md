@@ -12,10 +12,11 @@
 >None
 #### DIFFICULTY
 >simple as description :))
+#### Tools
+> Python script & pwndbg or Ida.
 #### FLAG
 >FUSec{On35H00tOnEkil1}
-#### Tools
-> Python script ex.py & pwndbg or Ida.
+
 ##### SOLVED
 Tiếp cận đề bài là 2 files: pwn_1 và file code C pwn_1.c. Đọc sơ qua file code C ta có thể thấy đây là dạng bài buffer overflow làm tràn Instruction Pointer (IP) để trả về kết quả hàm mong muốn (Ret2win). Trong code thì hàm hacked() cũng không có tham số nên chỉ đơn giản là trả về hàm đó để mở flag.
 - __Giai đoạn thử__
