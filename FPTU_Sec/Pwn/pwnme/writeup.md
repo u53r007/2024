@@ -47,7 +47,7 @@ Tuyệt!! xong bước thử trên local giờ deploy lên trên server.
   
 Giai đoạn này sẽ khó hơn xíu vì ta không thể copy cái script rồi quăng lên trên server được vì:
 - Cái script được thiết lập chạy trên local.
-- Bản chất code vẫn trả kết quả cuối cùng là lỗi overflow (SIGSEGV Segmentation fault) và cái flag chúng ta thấy thực chất chỉ nằm trên RSI nên khi deploy lên server sẽ không output kết quả ra. 
+- Bản chất code vẫn trả kết quả cuối cùng là lỗi overflow (SIGSEGV Segmentation fault) và cái flag chúng ta thấy thực chất chỉ nằm trên RSP nên khi deploy lên server sẽ không output kết quả ra. 
 
 Nên chúng ta phải tạo một script khác để capture dòng response đầu tiên của server trả về trước khi trả lỗi overflow. Có thể nhờ chat gờ bê tê :)))
 Vào pwndbg:
@@ -57,7 +57,7 @@ Vào pwndbg:
 
 xong sau đó chạy file script exploit.py sẽ ra được flag.
 >[!NOTE]
->Phải chọn đúng địa chỉ của instruction __mov rbp,rsp__ thì mới mở flag được là bởi vì chúng ta đang xài offset của rsp chứ không phải rip.
+>Phải chọn đúng địa chỉ của instruction __mov rbp,rsp__ thì mới mở flag được là bởi vì chúng ta đang xài offset của RSP chứ không phải RIP.
 
 >Source tham khảo:
 >[PicoCTF JohnHammond](https://www.youtube.com/watch?v=eg0gULifHFI)
