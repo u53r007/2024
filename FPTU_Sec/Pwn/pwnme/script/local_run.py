@@ -12,10 +12,10 @@ def start(argv=[], *a, **kw):
 
 
 # Specify your GDB script here for debugging
-gdbscript = '''
+gdbscript = ""
 init-pwndbg
 continue
-'''.format(**locals())
+"".format(**locals())
 
 
 # Set up pwntools for the correct architecture
@@ -30,7 +30,7 @@ context.log_level = 'debug'
 # ===========================================================
 
 io = start()
-# How many bytes to the RSP?
+# How many bytes to the RSP? In here it 24
 padding = 24
 
 payload = flat(
