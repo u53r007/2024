@@ -15,7 +15,7 @@
 #### FLAG
 >FuSec{flag-a7j349dx}
 ### SOLVED
-Tiếp cận với đề bài ta thấy không có file exe hay source code để ta có thể tham khảo code chỉ có cái server thôi. Netcat vào server thử xem nó là cái gì. Hừm!! Server sẽ yêu cầu ta nhập vào một string bất kì và sẽ response back lại cái string ta vừa nhập. Vậy ta nhập thử một string siêu dài thử xem sao :)))
+Tiếp cận với đề bài ta thấy không có file exe, elf hay source code để ta có thể tham khảo code chỉ có cái server thôi. Netcat vào server thử xem nó là cái gì. Hừm!! Server sẽ yêu cầu ta nhập vào một string bất kì và sẽ response back lại cái string ta vừa nhập. Vậy ta nhập thử một string siêu dài thử xem sao :)))
 
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/f315aec0-e5a9-492b-bd7e-a52d1df3e962)
 Server khôn nhè :))) có vẻ như nó sẽ tự cắt string ra thành 2 dòng nếu string quá dài để tránh buffer overflow. Haizz!! Vẫn còn một cách nữa!! Do server sẽ response lại bất kì cái gì ta nhập vào vậy ta thử nhập vào __%x__ để xem server có thực hiện validation không?
