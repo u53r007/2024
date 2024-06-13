@@ -37,7 +37,7 @@ Bây giờ ta thực hiện đảo ngược hàm encr() từ mã hóa thành gi�
 
 + __d = ip2d(ipa)__: hàm ip2d() chuyển đổi danh sách địa chỉ IP (__ipa__) trở lại thành bytearray (__d__).
 
-+__padding_length = d[-1]__: Byte cuối cùng của bytearray được sử dụng để xác định chiều dài đệm.
++ __padding_length = d[-1]__: Byte cuối cùng của bytearray được sử dụng để xác định chiều dài đệm.
 
 + __d[:-padding_length]__: Xóa chuỗi đệm.
 
