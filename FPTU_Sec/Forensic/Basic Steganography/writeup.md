@@ -15,7 +15,7 @@
 #### FLAG
 >FUSec{70VictoryDienBienPhu}
 #### SOLVED
-Tiếp cận đề bài ta được cho một bức hình (fictory.jpg). Việc đầu tiên nên làm tất nhiên là mở bức hình xem nó là cái gì. Bức hình thì quá nổi tiếng rồi nhưng cũng không có gì đặc sắc liên quan tới flag. Sau đó chúng ta nên extract exif metadata:
+Tiếp cận đề bài ta được cho một bức hình (fictory.jpg). Việc đầu tiên nên làm tất nhiên là mở bức hình xem nó là cái gì đã. Bức hình thì quá nổi tiếng rồi nhưng cũng không có gì đặc sắc liên quan tới flag chúng ta cần. Sau đó chúng ta nên extract metadata:
 
 > exiftool fictory.jpg
 
