@@ -21,7 +21,7 @@ Tiếp cận đề bài ta được cho một bức hình (fictory.jpg). Việc 
 
 ![image](https://github.com/u53r007/2024/assets/165979681/874ad9ea-7cf0-452a-acbe-0ff5d2599ebe)
 
-Ta phát hiện ra extension .jpg chỉ là giả 🤡. Extension thật sự của bức hình là .webp. Sau đó mình có thực hiện các cách để thử các cách để tìm data ẩn trong bức hình như steghide, binwalk, extract LSB các kiểu,... nhưng hoàn toàn vô vọng. Cuối cùng mình thử extract hex của bức hình.
+Ta phát hiện ra extension .jpg chỉ là giả 🤡. Extension thật sự của bức hình là .webp. Sau đó mình có thực hiện các cách để tìm data ẩn trong bức hình nhưng hoàn toàn vô vọng. Cuối cùng mình thử extract hex của bức hình.
 
 > xxd fictory.jpg
 
