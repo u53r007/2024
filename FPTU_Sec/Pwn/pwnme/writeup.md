@@ -22,19 +22,21 @@ Tiếp cận đề bài là 2 files: pwn_1 và file code C pwn_1.c. Đọc sơ q
 - __Giai đoạn thử__
 
 Trước tiên ta tìm offset của hàm hacked(). Có nhiều cách để làm điều đó craft payload (ropstar.py), xài cyclic pwndbg hoặc metasploit, disassemble xong tự tính :))) Ở đây mình xài pwndbg để tìm offset:
-> cyclic 100
+```
+$ cyclic 100
+```
+> aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa
 
--aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaa
-> run xong điền cyclic vào
+ run xong điền cyclic vào
 
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/49e9e9f0-58b7-4ab0-9a02-6c705b602b63)
 
 Điều đặc biệt đó chính là do đây là file 64-bit nên chúng ta sẽ không overflow được RIP như EIP trong 32-bit, vậy chúng ta sẽ lấy đỡ offset của thằng ngay trên nó là RSP lấy 8 bytes đầu.
 
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/96256532-0b76-4fdd-8526-21e070548288)
-
-> cyclic -l daaaaaaa
-
+```
+$ cyclic -l daaaaaaa
+```
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/b37e9441-38df-4fdb-9530-b3c88c586a03)
 
 Vậy là ta đã tìm được offset của hacked() là 24. Giờ chúng ta dùng payload để chuyển hướng RIP sang hàm hacked() (payload có thể tự craft hoặc dùng của pwntools local_run.py).
