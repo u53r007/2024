@@ -15,7 +15,7 @@
 #### FLAG
 >FUSec{howdyiamnowinyourhanddecrypted}
 #### SOLVED
-Tiếp cận đề bài ta thấy bài đã cho đoạn script để mã hóa đoạn mã trên (encrypt.py). Phân tích đoạn script đó ta thấy nó sử dụng thuật toán mã hóa luồng (stream cipher) để mã hóa plaintext thành các địa chỉ IPv4. Phân tích sâu hơn vào đoạn script ta chỉ cần chú ý đến hàm encr() thực hiện chức năng mã hóa:
+Tiếp cận đề bài ta thấy bài đã cho đoạn script để mã hóa đoạn mã trên (encrypt.py). Phân tích đoạn script đó ta thấy nó sử dụng thuật toán mã hóa luồng (stream cipher) để mã hóa plaintext thành các địa chỉ IPv4. Phân tích sâu hơn vào đoạn script ta hiểu sơ đoạn script như sau:
 
 ![image](https://github.com/u53r007/2024/assets/165979681/b54dbc76-e573-458f-870b-14557b464098)
 
