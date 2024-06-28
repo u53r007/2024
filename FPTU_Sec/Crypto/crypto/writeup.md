@@ -37,6 +37,7 @@ Cách mã hóa của hàm này là:
 
 + Khóa: __bytearray ('supersecretkey', 'utf-8')__ - Khóa được sử dụng để mã hóa.
 
+Từ kiến thức đó craft file decrypt và giải thôi!
 
 Chạy file decrypt.py và ta sẽ có flag.
 
