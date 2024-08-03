@@ -1,27 +1,27 @@
-## TITLE
+### TITLE
 >Basic Steganography
-## DESCRIPTION
+### DESCRIPTION
 > Flag format: FUSec{...}
 
 > During the process of collecting digital evidence, you (a member of the digital investigation team) suspect that an image file (fictory.jpg) is obtained that has hidden information inside. Let's try to find that information.
-## CATEGORY
+### CATEGORY
 >Forensic
-## SCORE
+### SCORE
 >100
-## HINT
+### HINT
 >None
-## DIFFICULTY
+### DIFFICULTY
 >Easy
-## FLAG
+### FLAG
 >FUSec{70VictoryDienBienPhu}
-## SOLVED
-Tiếp cận đề bài ta được cho một bức hình (fictory.jpg). Việc đầu tiên nên làm tất nhiên là mở bức hình xem nó là cái gì đã. Bức hình thì quá nổi tiếng rồi nhưng cũng không có gì đặc sắc liên quan tới flag chúng ta cần. Sau đó chúng ta nên extract metadata:
+### SOLVED
+Phân tích bức hình fictory.jpg. Việc đầu tiên nên làm tất nhiên là mở bức hình xem nó là cái gì đã. Bức hình thì quá nổi tiếng rồi nhưng cũng không có gì đặc sắc liên quan tới flag chúng ta cần. Sau đó thử extract metadata:
 ```
 $ exiftool fictory.jpg
 ```
 ![image](https://github.com/u53r007/2024/assets/165979681/874ad9ea-7cf0-452a-acbe-0ff5d2599ebe)
 
-Ta phát hiện ra extension .jpg chỉ là giả 🤡. Extension thật sự của bức hình là .webp. Sau đó mình có thực hiện các cách để tìm data ẩn trong bức hình nhưng hoàn toàn vô vọng. Cuối cùng mình thử extract hex của bức hình.
+Trong metadata cũng không có gì cần chú ý cả ngoài việc biết chính xác đuôi file là .webp thay vì .jpg. Cuối cùng thử extract hex của bức hình.
 ```
 $ xxd fictory.jpg
 ```
