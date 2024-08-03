@@ -17,7 +17,7 @@
 ### FLAG
 >FUSec{1' or 1=1 union select database(), user()#}
 ### SOLVED
-Đầu tiên ta phân tích file pcap. Ta thấy file này ghi lại các cuộc trò chuyện TCP nhưng sử dụng HTTP nên không mã hoá đường truyền vì thế ta có thể dùng HTTP stream đọc được nội dung. Ta tìm đến dòng thứ 19 và ngay lập tức ta có thể thấy được cái query cần tìm.
+Đầu tiên ta phân tích file pcap. Ta thấy file này ghi lại các cuộc trò chuyện TCP nhưng sử dụng HTTP nên không mã hoá đường truyền vì thế ta có thể dùng HTTP stream đọc được nội dung. Ta tìm đến dòng thứ 19 và ngay lập tức có thể thấy được cái query cần tìm.
 
 ![image](https://github.com/user-attachments/assets/141add71-3cf2-4091-bc7e-79f7c18e5e82)
 ![image](https://github.com/user-attachments/assets/afbf58f4-fca1-4d27-8f77-bc946756b8b8)
