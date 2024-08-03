@@ -39,7 +39,7 @@ Cách mã hóa của hàm này là:
 
 Từ kiến thức đó craft file decrypt và giải thôi!
 
-Chạy file decrypt.py và ta sẽ có flag.
+Chạy file decryptStreamCipher.py và ta sẽ có flag.
 
 > Source tham khảo: [Stream Cipher Algo](https://www.geeksforgeeks.org/stream-ciphers/)
 
