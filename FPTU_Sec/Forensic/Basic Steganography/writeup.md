@@ -1,20 +1,20 @@
-#### TITLE
+## TITLE
 >Basic Steganography
-#### DESCRIPTION
+## DESCRIPTION
 > Flag format: FUSec{...}
 
 > During the process of collecting digital evidence, you (a member of the digital investigation team) suspect that an image file (fictory.jpg) is obtained that has hidden information inside. Let's try to find that information.
-#### CATEGORY
+## CATEGORY
 >Forensic
-#### SCORE
+## SCORE
 >100
-#### HINT
+## HINT
 >None
-#### DIFFICULTY
+## DIFFICULTY
 >Easy
-#### FLAG
+## FLAG
 >FUSec{70VictoryDienBienPhu}
-#### SOLVED
+## SOLVED
 Tiếp cận đề bài ta được cho một bức hình (fictory.jpg). Việc đầu tiên nên làm tất nhiên là mở bức hình xem nó là cái gì đã. Bức hình thì quá nổi tiếng rồi nhưng cũng không có gì đặc sắc liên quan tới flag chúng ta cần. Sau đó chúng ta nên extract metadata:
 ```
 $ exiftool fictory.jpg
@@ -29,4 +29,4 @@ $ xxd fictory.jpg
 
 Và nó ra luôn :)) Ảo thật đấy!!
 
-###### END!!
+#### END!!
