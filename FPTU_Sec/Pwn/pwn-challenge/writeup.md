@@ -1,20 +1,20 @@
-#### TITLE
+## TITLE
 >pwn-challenge
-#### DESCRIPTION
+## DESCRIPTION
 > Can you snag the flag by exploiting a simple buffer overflow? Flag format: FUSec{...}
 
 >nc challenge.fuctf.com 8003
-#### CATEGORY
+## CATEGORY
 >Pwn
-#### SCORE
+## SCORE
 >100
-#### HINT
+## HINT
 >None
-#### DIFFICULTY
+## DIFFICULTY
 >simple as description :))
-#### FLAG
+## FLAG
 >FuSec{flag-a7j349dx}
-### SOLVED
+## SOLVED
 Tiếp cận với đề bài ta thấy không có file exe, elf hay source code để ta có thể tham khảo code chỉ có cái server thôi. Netcat vào server thử xem nó là cái gì. Hừm!! Server sẽ yêu cầu ta nhập vào một string bất kì và sẽ response back lại cái string ta vừa nhập. Vậy ta nhập thử một string siêu dài thử xem sao :)))
 
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/f315aec0-e5a9-492b-bd7e-a52d1df3e962)
@@ -38,6 +38,6 @@ Giống cái flag mình cần tìm rồi đấy mà nó vẫn cứ ngược ngư
 
 >Source tham khảo: [Endianess](https://www.youtube.com/watch?v=LxvFb63OOs8&t=7s) 
 
-###### END!!
+#### END!!
 
 
