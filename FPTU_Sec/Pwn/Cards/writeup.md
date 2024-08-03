@@ -1,20 +1,20 @@
-#### TITLE
+## TITLE
 >Cards
-#### DESCRIPTION
+## DESCRIPTION
 > "Người không chơi là người không bao giờ thắng, Người thua là người chưa thắng, Người bỏ cuộc là thất bại, Còn chơi là còn gỡ." - Nhà cái đến từ Tâu Âu. Flag format: FUSec{...}
 
 >nc challenge.fuctf.com 8006
-#### CATEGORY
+## CATEGORY
 >Pwn
-#### SCORE
+## SCORE
 >100
-#### HINT
+## HINT
 >None
-#### DIFFICULTY
+## DIFFICULTY
 >easy
-#### FLAG
+## FLAG
 >FUSec{th1s_1s_3x4ctly_h0w_my_pwn2own_l00k_l1k3!!}
-##### SOLVED
+## SOLVED
 Tiếp cận với đề bài sẽ cho mn 2 files: 1 là file cardg và cái còn lại là file code C cardg.c. Ta bắt đầu khai thác file code C trước, ta sẽ tập trung vào các vị trí sử dụng để nhận input từ người dùng như scanf, fgets, đặc biệt là gets vì nó rất dễ bị buffer overflow. Nhưng trong file code này hơi lắc léo hơn một chút, nó không dùng gets hay scanf để nhận giá trị input trực tiếp mà sử dụng hàm get_int(). Đọc hiểu sơ qua hàm get_int() như sau:
 - Nó sử dụng hàm read() từ libC để đọc input vào buf chứa được 16 bytes kí tự.
 - Kí tự cuối cùng của buf được cắt bằng null bytes terminator '\0'.
@@ -33,4 +33,4 @@ Xong chúng ta chỉ cần chọn 2 để mua flag thôi.
 >![image](https://github.com/uS3rR00t05/2024/assets/165979681/d5b9cd57-a836-4c6c-b82d-43abfa4179e3)
 
 >Source tham khảo: [Integer overflow](https://www.youtube.com/watch?v=Dbbh_lrbgAU)
-###### END!!
+#### END!!
