@@ -1,20 +1,20 @@
-## TITLE
+### TITLE
 >Crypto
-## DESCRIPTION
+### DESCRIPTION
 >Flag format: FUSec{...}
 
 >Hãy phân tích chương trình mã hóa sau để giải mã chuỗi sau: ['159.96.34.204', '136.182.188.58', '155.20.31.30', '12.234.113.15', '153.170.118.69', '189.152.240.17', '180.27.111.161', '87.205.101.118', '45.1.136.2', '122.3.3.3']
-## CATEGORY
+### CATEGORY
 >Crypto
-## SCORE
+### SCORE
 >100
-## HINT
+### HINT
 >None
-## DIFFICULTY
+### DIFFICULTY
 >Super easy
-## FLAG
+### FLAG
 >FUSec{howdyiamnowinyourhanddecrypted}
-## SOLVED
+### SOLVED
 Tiếp cận đề bài là đoạn script để mã hóa đoạn chuỗi trên (encryptStreamCipher.py). Phân tích đoạn script đó ta thấy nó sử dụng thuật toán mã hóa luồng (stream cipher) để mã hóa plaintext thành các địa chỉ IPv4. Phân tích sâu hơn vào đoạn script có thể hiểu sơ đoạn script như sau:
 
 Cách mã hóa của hàm này là:
