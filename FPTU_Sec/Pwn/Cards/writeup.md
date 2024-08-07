@@ -19,14 +19,8 @@ Tiếp cận với đề bài sẽ cho 2 files: 1 là file cardg và cái còn l
 
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/e82332a9-e506-4f9f-9d29-2efcf384bf8e)
 
-Chạy file cardg để thử giả thuyết hoặc netcat lên server để thử nuôn cho phẻ. Nhập một số âm cực lớn, bam tỷ phú trong một nốt nhạc! :)))
+Chạy file cardg để thử giả thuyết hoặc netcat lên server để thử nuôn cho phẻ. Nhập một số âm cực lớn, bam tỷ phú trong một nốt nhạc! :))) Code bị lỗi logic!
 ![image](https://github.com/uS3rR00t05/2024/assets/165979681/6d0556fa-5753-467d-90e3-9c3a7b99e099)
 
 Xong chỉ cần chọn 2 để mua flag thôi.
-
->[!NOTE]
->Chương trình bị lỗi tràn số học (arithmetic overflow) mà trong đây là integer overflow.
->![image](https://github.com/uS3rR00t05/2024/assets/165979681/d5b9cd57-a836-4c6c-b82d-43abfa4179e3)
-
->Source tham khảo: [Integer overflow](https://www.youtube.com/watch?v=Dbbh_lrbgAU)
 #### END!!
